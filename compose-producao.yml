@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   springboot-app:
-    image: "springboot-app:latest
+    image: "springboot-app:latest"
     ports:
       - 8880:8080
     environment:
