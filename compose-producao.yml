@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  springboot-app:
+    image: "springboot-app:latest
+    ports:
+      - 8880:8080
+    environment:
+      - nome.ambiente=Produção
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
